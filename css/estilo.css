@@ -1,0 +1,340 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Inter";
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+header {
+    margin: 0px;
+    padding: 0px;
+    background: #000c50;
+    height: 80px;
+    color: white;
+    box-shadow: 2px 2px 5px gray;
+}
+
+li {
+    list-style: none;
+}
+
+header h1 {
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    margin-left: 20px;
+    padding-top: 17px;
+}
+
+.cabeçalho nav ul li a {
+    color: white;
+    margin: 30px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.inicio {
+    display: flex;
+    justify-content: center;
+    margin-top: -33px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    min-height: 20vh;
+}
+
+#quadrado h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: -85px;
+}
+
+#quadrado p {
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+#quadrado {
+    scroll-margin-top: 70px;
+    background: linear-gradient(135deg, #00fcf3 0%, #0026fc 100%);
+    width: 500px;
+    height: 300px;
+    margin: 50px;
+    padding: 100px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+#quadrado img {
+    border-radius: 30px;
+    width: 500vh;
+    height: 300vh;
+    margin-top: 30px;
+}
+
+.caixa {
+    scroll-margin-top: 30px;
+    transition: all 0.3s ease;
+    width: 40vh;
+    margin: 4vh;
+    background-color: #000c50;
+    border-radius: 30px;
+}
+
+#header-lin {
+    background-color: #ffffff;
+    color: black;
+    padding: 0.6rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border-radius: 30px;
+}
+
+.caixa:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+}
+
+.caixa img {
+    width: 40vh;
+    height: 20vh;
+    border-radius: 30px 30px 0px 0px;
+}
+
+.caixa h2 {
+    margin-right: 1vw;
+    margin-top: 0.3vw;
+    color: cyan;
+    display: flex;
+    justify-content: center;
+}
+
+.caixa p {
+    display: flex;
+    justify-content: center;
+    margin-left: 1vw;
+    line-height: 25px;
+    margin-bottom: 30px;
+    width: 250px;
+    margin-top: 20px;
+    color: white;
+}
+
+.espaço {
+    display: flex;
+    justify-content: center;
+}
+
+#noticias h2 {
+    color: white;
+    margin-top: 100px;
+    margin-left: 30px;
+}
+
+.container2 {
+    background-color: rgba(40, 40, 40, 0.971);
+}
+
+#contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    min-height: 20vh;
+}
+
+.container-2 {
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.158);
+    width: 500px;
+    height: 510px;
+    margin: 50px;
+    padding: 100px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-2 input {
+    margin: 20px;
+    margin-left: -10px;
+    border: rgba(0, 0, 0, 0.15) 2px solid;
+    border-radius: 8px;
+    width: 500px;
+    height: 60px;
+    font-size: 1.25rem;
+}
+
+.container-2 h2 {
+    margin-top: -60px;
+    margin-left: 100px;
+}
+
+.container-2 h4 {
+    margin-top: 10px;
+}
+
+.container-2 button {
+    margin-top: 50px;
+    width: 500px;
+    height: 70px;
+    font-size: 20px;
+    background: linear-gradient(135deg, #b820ff 0%, #2d4dff 100%);
+    border-radius: 20px;
+    border: 0px;
+    color: white;
+}
+
+
+#main-title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    font-size: 30px;
+    margin-bottom: -10px;
+}
+
+.main-area h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.main-area p {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.card h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.card p {
+    display: flex;
+    justify-content: center;
+}
+
+.main-areacenter {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 300px;
+    height: 350px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.158);
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    background: white;
+    padding: 2rem;
+    margin-bottom: 60px;
+    margin: 30px;
+    transition: 0.5s ease-in-out; 
+}
+
+.card:hover {
+    transform: translateY(-15px);
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 6px;
+    background: linear-gradient(to right, #b820ff 0%, #2d4dff 100%);
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+}
+
+.card:hover::before {
+    transform: scaleX(1);
+}
+
+.main-area-a {
+    text-decoration: none;
+    font-size: 20px;
+    color: cyan;
+    font-weight: bold;
+}
+
+.main-area h3 {
+    font-size: 26px;
+}
+
+header-lin {
+    background-color: white;
+}
+
+#main-area-p {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    padding-left: 20px;
+}
+
+@media (max-width: 650px) {
+    .espaço {
+        flex-direction: column;
+    }
+}
+
+.hidden {
+  display: none;
+}
+
+.close-modal {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.janela {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 50%;
+  background-color: white;
+  padding: 6rem;
+  border-radius: 30px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 30;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 400%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
