@@ -9,19 +9,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 </head>
 
-<body>
+<body class="">
     <header class="cabeçalho">
         <h1>Ciência e Tecnologia</h1>
         <nav class="inicio">
             <ul>
                 <li>
-                    <a class="anima" href="#container">Inicio</a>
-                    <a class="anima" href="#caixa">Noticias</a>
-                    <span class="botao"><a id="header-lin" href="inglês.html">PT-BR</a></span>
+                    <a href="#quadrado">Inicio</a>
+                    <a href="#main-title">Noticias</a>
+                    <span><a id="header-lin" href="inglês.html">Português (BR)</a></span>
+                    <a class="logo-darkmode" href="#">🌞</a>
                 </li>
             </ul>
         </nav>
@@ -38,70 +39,110 @@
         <h2>Áreas da Pesquisa</h2>
         <p>Esses são os campos mais inovadores da ciência e tecnologia que estão moldando o futuro da humanidade</p>
         <div class="main-areacenter">
-            <div class="card">
+            <div id="card-1" class="card">
                 <h3>Inteligência Artificial</h3>
-                <p id="main-area-p">abrange a criação de sistemas computacionais que simulam a inteligência humana</p>
+                <p id="mainarea-p">A Inteligência Artificial é o nosso "cérebro" digital. Ela é a tecnologia transversal
+                    que impulsiona a inovação em todas as nossas outras áreas.</p>
             </div>
-            <div class="card">
-                <h3>Pisicultura</h3>
-                <p id="main-area-p">A piscicultura vem cada vez mais ganhando destaque na produção de alimentos nos últimos anos.</p>
+            <div id="card-2" class="card">
+                <h3>Piscicultura</h3>
+                <p id="mainarea-p">A produção de proteína aquática é vital para a segurança alimentar global. No
+                    entanto, ela precisa ser sustentável. Nossa pesquisa em Piscicultura (ou Aquacultura Inteligente)
+                    usa a tecnologia para:</p>
             </div>
-            <div class="card">
+            <div id="card-3" class="card">
                 <h3>Agricultura</h3>
-                <p id="main-area-p">utiliza ferramentas e métodos inovadores para aumentar a produtividade, otimizar a gestão e promover a sustentabilidade no campo.</p>
-        </div>
+                <p id="mainarea-p">Esqueça a ideia de agricultura como algo "analógico". Nossa pesquisa foca na
+                    Agricultura de Precisão (ou Agricultura 4.0), onde a tecnologia e a terra andam juntas. Ao aplicar
+                    IA, sensores e drones, buscamos:</p>
+            </div>
     </section>
 
     <h2 id="main-title">Ultimas Descobertas</h2>
-    <main id="container">
-        <div class="espaço">
-            <div class="caixa">
-                <img src="cerebro.png">
-                <h2>ChatGPT-5</h2>
-                <p>As primeiras reações do novo ChatGPT-5, foi usuários relatando que a nova versão parece mais burra
-                </p>
+    <main>
+
+        <section class="main-cards">
+            <div id="glass-1" class="card-glass">
+                <h1 id="title">Inteligência Artificial</h1>
+                <p id="card-p">igor lindinho</p>
             </div>
-            <div class="caixa">
-                <img src="tec.png">
-                <h2>Curiosidade 2</h2>
-                <p>A primeiro computador, ENIAC, pesava mais de 27 toneladas, enquanto o primeiro vírus de computador,
-                    Creeper, surgiu em 1971.</p>
+
+            <div id="glass-2" class="card-glass">
+                <h1 id="title">Piscicultura</h1>
+                <p id="card-p">information of piscicultura</p>
             </div>
-            <div class="caixa">
-                <img src="ciencia2.png">
-                <h2>Curiosidade 3</h2>
-                <p>A palavra "spam" tem origem em um sketch do grupo Monty Python, e o primeiro emoji foi criado em
-                    1999.
-                </p>
+
+            <div id="glass-3" class="card-glass">
+                <h1 id="title">Agricultura</h1>
+                <p id="card-p">informations of agricultura</p>
             </div>
-        </div>
-        <section class="container2">
         </section>
-        <div class="janela hidden">
-            <button class="close-modal">&times;</button>
-            <h1>Teste</h1>
-            <p>
-                Ciência e Tecnologia.
-            </p>
-            </div>
-            <div class="overlay hidden"></div>
+
+        <section class="dialog">
+            <dialog class="dialog-1">
+                <button class="close-modal">&times;</button>
+                <h1>Inteligência Artificial</h1>
+                <p>A IA está sendo cada vez mais aplicada para resolver desafios ambientais complexos. No Brasil, por
+                    exemplo, iniciativas recentes (anunciadas em eventos como a COP30) destacam o uso de algoritmos de
+                    deep learning e análise de imagens de satélite para monitorar o desmatamento na Amazônia em tempo
+                    quase real. Esses sistemas conseguem identificar atividades ilegais, como extração de madeira e
+                    mineração, com uma precisão muito maior, permitindo que as autoridades ajam de forma mais rápida e
+                    eficaz na proteção dos biomas.
+                    2025 foi o ano em que a IA multimodal (que entende e processa vários tipos de informação) realmente
+                    amadureceu. Modelos como o Llama 4, da Meta, conseguem processar e integrar de forma fluida texto,
+                    imagens, vídeo e áudio ao mesmo tempo, tornando a interação mais natural.</p>
+            </dialog>
+
+            <dialog class="dialog-2">
+                <button class="close-modal">&times;</button>
+                <h1>Piscicultura</h1>
+                <p>A tendência dominante na piscicultura moderna é a "Aquacultura de Precisão". Tecnologias de IA e
+                    Internet das Coisas (IoT) estão revolucionando o setor. Sensores avançados agora monitoram a
+                    qualidade da água (níveis de oxigênio, pH, amônia) 24/7, enquanto câmeras subaquáticas usam visão
+                    computacional para rastrear o crescimento, a saúde e o comportamento alimentar dos peixes. Isso
+                    permite a automação da alimentação, reduzindo o desperdício de ração e melhorando a taxa de
+                    conversão alimentar, tornando a produção mais sustentável e lucrativa.</p>
+            </dialog>
+
+            <dialog class="dialog-3">
+                <button class="close-modal">&times;</button>
+                <h1>Agricultura</h1>
+                <p>Na agricultura, a grande notícia é a consolidação da "Automação Inteligente". Tratores e
+                    colheitadeiras autônomos equipados com GPS de alta precisão e IA estão se tornando mais comuns. Além
+                    disso, o uso de "gêmeos digitais" (digital twins) de fazendas está crescendo. Agricultores podem
+                    simular o impacto de diferentes estratégias de plantio, irrigação ou fertilização em um modelo
+                    virtual antes de aplicá-las no campo. Isso, combinado com drones que usam IA para identificar pragas
+                    e estresse hídrico em plantas individuais, está levando a eficiência no uso de recursos a um novo
+                    patamar.</p>
+            </dialog>
+
+            <dialog class="dialog-4">
+                <button class="close-modal">&times;</button>
+                <h1>área chat-gpt</h1>
+                <p>informations sobre agricultura</p>
+            </dialog>
+
+            <dialog class="dialog-5">
+                <button class="close-modal">&times;</button>
+                <h1>área piscicultura</h1>
+                <p>informations sobre agricultura</p>
+            </dialog>
+
+            <dialog class="dialog-6">
+                <button class="close-modal">&times;</button>
+                <h1>área agricultura</h1>
+                <p>informations sobre agricultura</p>
+            </dialog>
+        </section>
+
     </main>
-    <footer>
-        <div id="contato">
-            <div class="container-2">
-                <h2>Entre em contato comigo</h2>
-                <h4>Nome</h4>
-                <input type="text">
-                <h4>Sobrenome</h4>
-                <input type="text">
-                <h4>Email</h4>
-                <input type="text">
-                <h4>Mensagem</h4>
-                <input type="text">
-                <button>Enviar</button>
-            </div>
+
+    <footer class="site-rodape">
+        <div class="container-rodape">
+            <p>© 2025 - <i>Todos os direitos reservados.</i></p>
         </div>
     </footer>
+
     <script src="script.js"></script>
 </body>
 

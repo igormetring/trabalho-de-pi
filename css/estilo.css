@@ -3,6 +3,32 @@ html {
 }
 
 * {
+    user-select: none;
+}
+
+:root {
+    --color-1: white;
+    --color-2: black;
+    --color-3: white;
+    --card-border: none;
+    --card-background: white;
+    --card-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.158);
+}
+
+body {
+    background-color: var(--color-3);
+}
+
+.darkmode {
+    --color-1: black;
+    --color-2: white;
+    --color-3: #1a1a1a;
+    --card-border: rgba(255, 255, 255, 0.1);
+    --card-background: rgba(255, 255, 255, 0.05);
+    --card-shadow: rgba(102, 126, 234, 0.3);
+}
+
+* {
     margin: 0px;
     padding: 0px;
     font-family: "Inter";
@@ -16,10 +42,9 @@ img {
 header {
     margin: 0px;
     padding: 0px;
-    background: #000c50;
+    background: black;
     height: 80px;
     color: white;
-    box-shadow: 2px 2px 5px gray;
 }
 
 li {
@@ -35,16 +60,25 @@ header h1 {
 }
 
 .cabeçalho nav ul li a {
-    color: white;
+    color: rgb(233, 233, 233);
     margin: 30px;
     text-decoration: none;
     font-size: 20px;
+    transition: 0.2s;
+}
+
+.cabeçalho nav ul li a:hover {
+    color: white;
 }
 
 .inicio {
     display: flex;
     justify-content: center;
     margin-top: -33px;
+}
+
+.darkmode .card {
+    backdrop-filter: blur(10px);
 }
 
 .container {
@@ -92,46 +126,17 @@ header h1 {
     margin: 4vh;
     background-color: #000c50;
     border-radius: 30px;
+    cursor: pointer;
 }
 
 #header-lin {
-    background-color: #ffffff;
-    color: black;
-    padding: 0.6rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    border-radius: 30px;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 5px;
 }
 
-.caixa:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-    border-radius: 30px;
-}
-
-.caixa img {
-    width: 40vh;
-    height: 20vh;
-    border-radius: 30px 30px 0px 0px;
-}
-
-.caixa h2 {
-    margin-right: 1vw;
-    margin-top: 0.3vw;
-    color: cyan;
-    display: flex;
-    justify-content: center;
-}
-
-.caixa p {
-    display: flex;
-    justify-content: center;
-    margin-left: 1vw;
-    line-height: 25px;
-    margin-bottom: 30px;
-    width: 250px;
-    margin-top: 20px;
-    color: white;
+#header-lin:hover {
+    background-color: rgba(197, 197, 197, 0.408);
 }
 
 .espaço {
@@ -139,78 +144,20 @@ header h1 {
     justify-content: center;
 }
 
-#noticias h2 {
-    color: white;
-    margin-top: 100px;
-    margin-left: 30px;
-}
-
-.container2 {
-    background-color: rgba(40, 40, 40, 0.971);
-}
-
-#contato {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    min-height: 20vh;
-}
-
-.container-2 {
-    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.158);
-    width: 500px;
-    height: 510px;
-    margin: 50px;
-    padding: 100px;
-    border-radius: 30px;
-    display: flex;
-    flex-direction: column;
-}
-
-.container-2 input {
-    margin: 20px;
-    margin-left: -10px;
-    border: rgba(0, 0, 0, 0.15) 2px solid;
-    border-radius: 8px;
-    width: 500px;
-    height: 60px;
-    font-size: 1.25rem;
-}
-
-.container-2 h2 {
-    margin-top: -60px;
-    margin-left: 100px;
-}
-
-.container-2 h4 {
-    margin-top: 10px;
-}
-
-.container-2 button {
-    margin-top: 50px;
-    width: 500px;
-    height: 70px;
-    font-size: 20px;
-    background: linear-gradient(135deg, #b820ff 0%, #2d4dff 100%);
-    border-radius: 20px;
-    border: 0px;
-    color: white;
-}
-
-
 #main-title {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
     font-size: 30px;
     margin-bottom: -10px;
+    color: var(--color-2);
 }
 
 .main-area h2 {
     display: flex;
     justify-content: center;
     font-size: 30px;
+    color: var(--color-2);
 }
 
 .main-area p {
@@ -219,6 +166,7 @@ header h1 {
     font-size: 18px;
     margin-bottom: 40px;
     margin-top: 10px;
+    color: var(--color-2);
 }
 
 .card h3 {
@@ -237,38 +185,29 @@ header h1 {
 }
 
 .card {
-    width: 300px;
-    height: 350px;
+    width: 25vh;
+    height: 30vh;
     border-radius: 30px;
-    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.158);
+    box-shadow: var(--card-shadow);
     padding: 30px;
-    position: relative;
-    overflow: hidden;
-    background: white;
-    padding: 2rem;
-    margin-bottom: 60px;
+    background: var(--card-background);
+    color: var(--color-2);
+    border: 1px solid var(--card-border);
     margin: 30px;
-    transition: 0.5s ease-in-out; 
+    transition: 0.5s ease;
+    cursor: pointer;
+    overflow: hidden;
+    word-wrap: break-word;
+    min-width: 0;
 }
 
 .card:hover {
     transform: translateY(-15px);
+    box-shadow: var(--card-shadow);
 }
 
-.card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 6px;
-    background: linear-gradient(to right, #b820ff 0%, #2d4dff 100%);
-    transform: scaleX(0);
-    transition: transform 0.5s ease;
-}
-
-.card:hover::before {
-    transform: scaleX(1);
+.darkmode .card:hover {
+    box-shadow: 0 20px 40px var(--card-shadow);
 }
 
 .main-area-a {
@@ -286,11 +225,14 @@ header-lin {
     background-color: white;
 }
 
-#main-area-p {
+#mainarea-p {
     display: flex;
     justify-content: center;
     font-size: 18px;
     padding-left: 20px;
+    margin-top: 1.6rem;
+    line-height: 1.8rem;
+    color: var(--color-2);
 }
 
 @media (max-width: 650px) {
@@ -299,42 +241,107 @@ header-lin {
     }
 }
 
-.hidden {
-  display: none;
-}
-
 .close-modal {
-  position: absolute;
-  top: 1.2rem;
-  right: 2rem;
-  font-size: 5rem;
-  color: #333;
-  cursor: pointer;
-  border: none;
-  background: none;
+    position: absolute;
+    top: 1.2rem;
+    right: 2rem;
+    font-size: 5rem;
+    color: #333;
+    cursor: pointer;
+    border: none;
+    background: none;
 }
 
-.janela {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 50%;
-  height: 50%;
-  background-color: white;
-  padding: 6rem;
-  border-radius: 30px;
-  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
-  z-index: 30;
+.logo-darkmode:hover {
+    background-color: rgba(223, 223, 223, 0.39);
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 400%;
-  background-color: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(3px);
-  z-index: 5;
+.logo-darkmode {
+    transition: 0.2s;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+.main-cards {
+    display: flex;
+    justify-content: center;
+}
+
+.card-glass {
+    width: 25rem;
+    height: 28vh;
+    margin: 3rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.card-glass:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+}
+
+#title {
+    display: flex;
+    justify-content: center;
+    color: var(--color-2);
+}
+
+#card-p {
+    font-family: 'Montserrat';
+    font-size: 18px;
+    color: var(--color-2);
+    margin-top: 2rem;
+}
+
+#modal-p {
+    font-size: 24px;
+    font-family: 'Montserrat';
+    margin-top: 30px;
+}
+
+dialog {
+    margin: auto;
+    width: 80rem;
+    height: 40rem;
+    border: none;
+    border-radius: 30px;
+    padding: 50px;
+}
+
+dialog p {
+    margin-top: 30px;
+    font-size: 32px;
+    line-height: 46px;
+    font-family: 'Montserrat';
+}
+
+dialog h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 44px;
+}
+
+footer {
+    font-size: 22px;
+    font-family: 'Montserrat';
+}
+
+.site-rodape {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 8rem;
+}
+
+.site-rodape a {
+    color: #fff;
+    margin: 10px 10px;
+    text-decoration: none;
 }
