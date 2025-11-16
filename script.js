@@ -8,7 +8,7 @@ bntTema.addEventListener('click', () => {
   if (body.classList.contains('darkmode')) {
     bntTema.textContent = '🌙';
   } else {
-    bntTema.textContent = '🌞';
+    bntTema.textContent = '😎';
   }
 });
 // tema escuro
