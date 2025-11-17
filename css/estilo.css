@@ -185,8 +185,8 @@ header h1 {
 }
 
 .card {
-    width: 25vh;
-    height: 30vh;
+    width: 28vh;
+    height: 35vh;
     border-radius: 30px;
     box-shadow: var(--card-shadow);
     padding: 30px;
