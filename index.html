@@ -21,7 +21,10 @@
                 <li>
                     <a href="#quadrado">Inicio</a>
                     <a href="#main-title">Noticias</a>
-                    <span><a id="header-lin" href="inglês.html">Português (BR)</a></span>
+                    <span onclick="changeLanguage('pt')" id="btn-pt"><a id="header-lin" class="active">Português
+                            (BR)</a></span>
+                    <span onclick="changeLanguage('en')" id="btn-en"><a id="header-lin">Inglês (EN)</a></span>
+                    <span onclick="changeLanguage('es')" id="btn-es"><a id="header-lin">Espanhol (ES)</a></span>
                     <a class="logo-darkmode" href="#">😎</a>
                 </li>
             </ul>
@@ -30,28 +33,36 @@
 
     <section class="container">
         <div id="quadrado">
-            <h1>Ciência e Tecnologia</h1>
+            <h1 data-translate='enter-title'>Ciência e Tecnologia</h1>
             <img src="caboco.png">
-            <p>Inovação, descoberto, e o futuro da humanidade</p>
+            <p data-translate='enter-description'>Inovação, descoberto, e o futuro da humanidade</p>
         </div>
     </section>
     <section class="main-area">
-        <h2>Áreas da Pesquisa</h2>
-        <p>Esses são os campos mais inovadores da ciência e tecnologia que estão moldando o futuro da humanidade</p>
+        <h2 data-translate='area-title'>Áreas da Pesquisa</h2>
+        <p data-translate="area-description">Esses são os campos mais inovadores da ciência e tecnologia que estão
+            moldando o futuro da
+            humanidade</p>
         <div class="main-areacenter">
             <div id="card-1" class="card">
-                <h3>Inteligência Artificial</h3>
-                <p id="mainarea-p">A Inteligência Artificial é o nosso "cérebro" digital. Ela é a tecnologia transversal.</p>
+                <h3 data-translate="area2-title">Inteligência Artificial</h3>
+                <p data-translate="area2-description" id="mainarea-p">A Inteligência Artificial é o nosso "cérebro"
+                    digital. Ela é a tecnologia transversal
+                    que impulsiona a inovação em todas as nossas outras áreas.</p>
             </div>
             <div id="card-2" class="card">
-                <h3>Piscicultura</h3>
-                <p id="mainarea-p">A produção de proteína aquática é vital para a segurança alimentar global. No
-                    entanto, ela precisa ser sustentável.</p>
+                <h3 data-translate="area3-title">Piscicultura</h3>
+                <p data-translate="area3-description" id="mainarea-p">A produção de proteína aquática é vital para a
+                    segurança alimentar global. No
+                    entanto, ela precisa ser sustentável. Nossa pesquisa em Piscicultura (ou Aquacultura Inteligente)
+                    usa a tecnologia para:</p>
             </div>
             <div id="card-3" class="card">
-                <h3>Agricultura</h3>
-                <p id="mainarea-p">Esqueça a ideia de agricultura como algo "analógico". Nossa pesquisa foca na
-                    Agricultura de Precisão (ou Agricultura 4.0).</p>
+                <h3 data-translate="area4-title">Agricultura</h3>
+                <p data-translate="area4-description" id="mainarea-p">Esqueça a ideia de agricultura como algo
+                    "analógico". Nossa pesquisa foca na
+                    Agricultura de Precisão (ou Agricultura 4.0), onde a tecnologia e a terra andam juntas. Ao aplicar
+                    IA, sensores e drones, buscamos:</p>
             </div>
     </section>
 
@@ -60,22 +71,25 @@
 
         <section class="main-cards">
             <div id="glass-1" class="card-glass">
-                <h1 id="title">Inteligência Artificial</h1>
-                <p id="card-p">Os modelos de linguagem estão evoluindo de "chatbots" para "agentes" proativos. A grande
+                <h1 data-translate="card-title" id="title">Inteligência Artificial</h1>
+                <p data-translate="card-description" id="card-p">Os modelos de linguagem estão evoluindo de "chatbots"
+                    para "agentes" proativos. A grande
                     descoberta recente não é apenas a capacidade de entender texto, mas de processar e gerar múltiplos
                     formatos (vídeo, áudio e código) simultaneamente.</p>
             </div>
 
             <div id="glass-2" class="card-glass">
-                <h1 id="title">Piscicultura</h1>
-                <p id="card-p">A vanguarda da piscicultura está em duas frentes: Primeiro, a "piscicultura celular",
+                <h1 data-translate="card2-title" id="title">Piscicultura</h1>
+                <p data-translate="card2-description" id="card-p">A vanguarda da piscicultura está em duas frentes:
+                    Primeiro, a "piscicultura celular",
                     onde filés de peixe reais são cultivados em laboratório a partir de células, eliminando a
                     necessidade de criação e abate.</p>
             </div>
 
             <div id="glass-3" class="card-glass">
-                <h1 id="title">Agricultura</h1>
-                <p id="card-p">A Agricultura de Precisão evoluiu. A descoberta mais recente é a "fenotipagem digital".
+                <h1 data-translate="card3-title" id="title">Agricultura</h1>
+                <p data-translate="card3-description" id="card-p">A Agricultura de Precisão evoluiu. A descoberta mais
+                    recente é a "fenotipagem digital".
                     Drones e robôs autônomos equipados com sensores hiperespectrais varrem o campo, analisando não
                     apenas a fazenda, mas cada planta individualmente.</p>
             </div>
