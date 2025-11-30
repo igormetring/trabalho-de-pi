@@ -194,76 +194,32 @@ const tradução = {
 
 let linguaAtual = 'pt';
 
-function changeLanguage(lingua) {
-  linguaAtual = linguaAtual === 'pt' ? 'en' : 'pt';
-  updateLanguage();
-}
-
-function updateLanguage() {
-  document.querySelectorAll('[data-translate]').forEach(element => {
-    const key = element.getAttribute('data-translate');
-    if (tradução[linguaAtual][key]) {
-      element.textContent = tradução[linguaAtual][key];
-    }
-  });
-
-  document.documentElement.lang = linguaAtual === 'pt' ? 'pt-BR' : 'en-US';
-}
-
-//scrool suave
 function smoothScroll(target) {
   const element = document.querySelector(target);
 
-  if (!element) return;
-
-  const elementPosition = element.getBoundingClientRect().top;
-  const offsetPosition = elementPosition + window.pageYOffset;
-
-  // Verifica se o navegador suporta scroll suave nativo
-  if ('scrollBehavior' in document.documentElement.style) {
-    // Navegadores modernos
-    window.scrollTo({
-      top: offsetPosition,
-      behavior: 'smooth'
+  if (element) {
+    element.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
     });
-  } else {
-    // Fallback para navegadores antigos - animação manual
-    const startPosition = window.pageYOffset;
-    const distance = offsetPosition - startPosition;
-    const duration = 800; // Duração em milissegundos
-    let start = null;
-
-    function animation(currentTime) {
-      if (start === null) start = currentTime;
-      const timeElapsed = currentTime - start;
-      const run = ease(timeElapsed, startPosition, distance, duration);
-      window.scrollTo(0, run);
-      if (timeElapsed < duration) requestAnimationFrame(animation);
-    }
-
-    // Função de easing para suavizar a animação
-    function ease(t, b, c, d) {
-      t /= d / 2;
-      if (t < 1) return c / 2 * t * t + b;
-      t--;
-      return -c / 2 * (t * (t - 2) - 1) + b;
-    }
-
-    requestAnimationFrame(animation);
   }
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-  const navLinks = document.querySelectorAll('a[href^="#"]');
+  const inicioLink = document.querySelector('a[href="#quadrado"]');
+  const noticiasLink = document.querySelector('a[href="#main-title"]');
 
-  navLinks.forEach(function (link) {
-    link.addEventListener('click', function (e) {
-      const href = this.getAttribute('href');
-
-      if (href !== '#' && href.length > 1) {
-        e.preventDefault();
-        smoothScroll(href);
-      }
+  if (inicioLink) {
+    inicioLink.addEventListener('click', function (e) {
+      e.preventDefault();
+      smoothScroll('#quadrado');
     });
-  });
+  }
+
+  if (noticiasLink) {
+    noticiasLink.addEventListener('click', function (e) {
+      e.preventDefault();
+      smoothScroll('#main-title');
+    });
+  }
 });
