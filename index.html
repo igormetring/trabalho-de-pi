@@ -15,16 +15,15 @@
 
 <body class="">
     <header class="cabeçalho">
-        <h1>Ciência e Tecnologia</h1>
+        <h1 data-translate="title">Ciência e Tecnologia</h1>
         <nav class="inicio">
             <ul>
                 <li>
-                    <a href="#quadrado">Inicio</a>
-                    <a href="#main-title">Noticias</a>
-                    <span onclick="changeLanguage('pt')" id="btn-pt"><a id="header-lin" class="active">Português
-                            (BR)</a></span>
-                    <span onclick="changeLanguage('en')" id="btn-en"><a id="header-lin">Inglês (EN)</a></span>
-                    <span onclick="changeLanguage('es')" id="btn-es"><a id="header-lin">Espanhol (ES)</a></span>
+                    <a data-translate="inicio" href="#quadrado">Inicio</a>
+                    <a data-translate="noticia" href="#main-title">Notícias</a>
+                    <a id="header-lin" class="active" data-translate="lang" onclick="changeLanguage('pt')" href="#">
+                        Português (BR)
+                    </a>
                     <a class="logo-darkmode" href="#">😎</a>
                 </li>
             </ul>
@@ -98,8 +97,9 @@
         <section class="dialog">
             <dialog class="dialog-1">
                 <button class="close-modal">&times;</button>
-                <h1>Inteligência Artificial</h1>
-                <p>A IA está sendo cada vez mais aplicada para resolver desafios ambientais complexos. No Brasil, por
+                <h1 data-translate="dialog-title1">Inteligência Artificial</h1>
+                <p data-translate="dialog-desc1">A IA está sendo cada vez mais aplicada para resolver desafios
+                    ambientais complexos. No Brasil, por
                     exemplo, iniciativas recentes (anunciadas em eventos como a COP30) destacam o uso de algoritmos de
                     deep learning e análise de imagens de satélite para monitorar o desmatamento na Amazônia em tempo
                     quase real. Esses sistemas conseguem identificar atividades ilegais, como extração de madeira e
@@ -112,8 +112,9 @@
 
             <dialog class="dialog-2">
                 <button class="close-modal">&times;</button>
-                <h1>Piscicultura</h1>
-                <p>A tendência dominante na piscicultura moderna é a "Aquacultura de Precisão". Tecnologias de IA e
+                <h1 data-translate="dialog-title2">Piscicultura</h1>
+                <p data-translate="dialog-desc2">A tendência dominante na piscicultura moderna é a "Aquacultura de
+                    Precisão". Tecnologias de IA e
                     Internet das Coisas (IoT) estão revolucionando o setor. Sensores avançados agora monitoram a
                     qualidade da água (níveis de oxigênio, pH, amônia) 24/7, enquanto câmeras subaquáticas usam visão
                     computacional para rastrear o crescimento, a saúde e o comportamento alimentar dos peixes. Isso
@@ -123,8 +124,9 @@
 
             <dialog class="dialog-3">
                 <button class="close-modal">&times;</button>
-                <h1>Agricultura</h1>
-                <p>Na agricultura, a grande notícia é a consolidação da "Automação Inteligente". Tratores e
+                <h1 data-translate="dialog-title3">Agricultura</h1>
+                <p data-translate="dialog-desc3">Na agricultura, a grande notícia é a consolidação da "Automação
+                    Inteligente". Tratores e
                     colheitadeiras autônomos equipados com GPS de alta precisão e IA estão se tornando mais comuns. Além
                     disso, o uso de "gêmeos digitais" (digital twins) de fazendas está crescendo. Agricultores podem
                     simular o impacto de diferentes estratégias de plantio, irrigação ou fertilização em um modelo
@@ -135,31 +137,32 @@
 
             <dialog class="dialog-4">
                 <button class="close-modal">&times;</button>
-                <h1>Inteligência Artificial: O Cérebro Digital da Inovação</h1>
-                <p>A Inteligência Artificial é mais do que apenas código; é a capacidade de aprender, adaptar e decidir.
-                    Em nossa pesquisa, tratamos a IA como a tecnologia transversal que impulsiona todas as outras. Desde
-                    a criação de algoritmos preditivos até a automação de sistemas complexos, exploramos como o machine
-                    learning e o deep learning estão moldando um futuro mais eficiente e inteligente.</p>
+                <h1 data-translate="dialog-title4">Inteligência Artificial: O Cérebro Digital da Inovação</h1>
+                <p data-translate="dialog-desc4">A Inteligência Artificial é mais do que apenas código; é a capacidade
+                    de aprender, adaptar e decidir. Em nossa pesquisa, tratamos a IA como a tecnologia transversal que
+                    impulsiona todas as outras. Desde a criação de algoritmos preditivos até a automação de sistemas
+                    complexos, exploramos como o machine learning e o deep learning estão moldando um futuro mais
+                    eficiente e inteligente.</p>
             </dialog>
 
             <dialog class="dialog-5">
                 <button class="close-modal">&times;</button>
-                <h1>Piscicultura Inteligente</h1>
-                <p>A produção de proteína aquática é um pilar para a segurança alimentar global, mas enfrenta desafios
-                    de sustentabilidade. Nossa pesquisa foca na "Aquacultura 4.0", um campo que une biologia e
-                    tecnologia. Usamos sensores IoT para monitorar a qualidade da água em tempo real, IA para otimizar a
-                    alimentação e biotecnologia para garantir a saúde dos peixes, criando um sistema mais produtivo e
-                    ecológico.</p>
+                <h1 data-translate="dialog-title5">Piscicultura Inteligente</h1>
+                <p data-translate="dialog-desc5">A produção de proteína aquática é um pilar para a segurança alimenta
+                    global, mas enfrenta desafios de sustentabilidade. Nossa pesquisa foca na "Aquacultura 4.0", um
+                    campo que une biologia e tecnologia. Usamos sensores IoT para monitorar a qualidade da água em tempo
+                    real, IA para otimizar a alimentação e biotecnologia para garantir a saúde dos peixes, criando um
+                    sistema mais produtivo e ecológico.</p>
             </dialog>
 
             <dialog class="dialog-6">
                 <button class="close-modal">&times;</button>
-                <h1>Agricultura de Precisão</h1>
-                <p>A agricultura moderna não é mais analógica. Nossa pesquisa foca na Agricultura de Precisão (ou
-                    AgTech), onde dados são a semente mais importante. Ao aplicar IA, sensores de solo, e drones para
-                    mapeamento aéreo, transformamos a tomada de decisão no campo. O objetivo é claro: maximizar a
-                    produtividade, otimizar o uso de recursos (água e fertilizantes) e garantir uma produção de
-                    alimentos sustentável para o planeta.</p>
+                <h1 data-translate="dialog-title6">Agricultura de Precisão</h1>
+                <p data-translate="dialog-desc6">A agricultura moderna não é mais analógica. Nossa pesquisa foca na
+                    Agricultura de Precisão (ou AgTech), onde dados são a semente mais importante. Ao aplicar IA,
+                    sensores de solo, e drones para mapeamento aéreo, transformamos a tomada de decisão no campo. O
+                    objetivo é claro: maximizar a produtividade, otimizar o uso de recursos (água e fertilizantes) e
+                    garantir uma produção de alimentos sustentável para o planeta.</p>
             </dialog>
         </section>
 
@@ -167,7 +170,8 @@
 
     <footer class="site-rodape">
         <div class="container-rodape">
-            <p>© 2025 - <i>Todos os direitos reservados.</i></p>
+            <p data-translate="footer">© 2025 - Desenvolvido por <strong>Igor Metring</strong>. <i>Todos os direitos
+                    reservados.</i></p>
         </div>
     </footer>
 
