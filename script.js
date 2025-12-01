@@ -194,6 +194,23 @@ const tradução = {
 
 let linguaAtual = 'pt';
 
+function changeLanguage(lingua) {
+  linguaAtual = linguaAtual === 'pt' ? 'en' : 'pt';
+  updateLanguage();
+}
+
+function updateLanguage() {
+  document.querySelectorAll('[data-translate]').forEach(element => {
+    const key = element.getAttribute('data-translate');
+    if (tradução[linguaAtual][key]) {
+      element.textContent = tradução[linguaAtual][key];
+    }
+  });
+
+  document.documentElement.lang = linguaAtual === 'pt' ? 'pt-BR' : 'en-US';
+}
+
+// scrool suave
 function smoothScroll(target) {
   const element = document.querySelector(target);
 
